@@ -12,7 +12,7 @@ login-box
     <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="{{ route('login') }}" class="h1"><b>Admin</b>LTE</a>
+                <a href="{{ route('login') }}" class="h1"><b>DIBAR</b></a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Acceder para iniciar sesión</p>
@@ -64,10 +64,10 @@ login-box
                     </div>
                     <div class="social-auth-links text-center mt-2 mb-3">
                         <button type="submit" class="btn btn-block btn-primary"><strong>{{ __('Login') }}  <i class="fa-solid fa-right-to-bracket"></i></strong></button>
-                        <p class="mb-0">
+                        {{-- <p class="mb-0">
                             <br>
                             <a href="{{ route('register') }}" class="text-center">Registrar nuevo usuario</a>
-                        </p>
+                        </p> --}}
                     </div>
 
                 </form>

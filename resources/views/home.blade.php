@@ -1,15 +1,9 @@
 @extends('layouts.plantillabase')
 
 @section('title','Home')
-@section('h-title','Blank Page')
-@section('card-title','Empty card')
+@section('h-title','Documentos Dibar')
+{{-- @section('card-title','Desviación de proceso') --}}
 
 @section('content')
-    @if (session('status'))
-        <div class="alert alert-success" role="alert">
-            {{ session('status') }}
-        </div>
-    @endif
-
-    {{ __('You are logged in!') }}
+    <h1>Bienvenido</h1>
 @endsection

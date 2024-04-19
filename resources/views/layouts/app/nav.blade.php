@@ -1,7 +1,7 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
         <a class="sidebar-brand" href="{{ route('home') }}">
-            <span class="align-middle">AdminKit</span>
+            <span class="align-middle">Laboratorios Dibar</span>
         </a>
         <ul class="sidebar-nav">
             <li class="sidebar-header">
@@ -9,25 +9,37 @@
             </li>
             <li class="sidebar-item active">
                 <a class="sidebar-link" href="#">
-                    <i class="fa fa-house"></i>
-                    <span class="align-middle">Dashboards</span>
+                    <i class="fa fa-house"></i>Docs Digitales
+                    <span class="align-middle"></span>
                 </a>
             </li>
-            <li class="sidebar-item">
-                <a data-bs-target="#analytics" data-bs-toggle="collapse" class="sidebar-link collapsed" aria-expanded="false">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span class="align-middle">Analytics</span>
-                </a>
-                <ul id="analytics" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar"
-                    style="">
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">E-Commerce <span
-                                class="sidebar-badge badge bg-primary">Pro</span></a></li>
-                    <li class="sidebar-item"><a class="sidebar-link" href="#">Crypto <span
-                                class="sidebar-badge badge bg-primary">Pro</span></a></li>
-                </ul>
-            </li>
+            
+            
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('responsable.index') }}">Encargados de procesos<span
+                                class="sidebar-badge badge bg-primary"></span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('desviacion.create') }}">Desviacion<span
+                                    class="sidebar-badge badge bg-primary"></span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('envasado.create') }}">Envasado<span
+                                        class="sidebar-badge badge bg-primary"></span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('limpieza.create') }}">Limpieza <span
+                                class="sidebar-badge badge bg-primary"></span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('mezcla.create') }}">Mezcla <span
+                                    class="sidebar-badge badge bg-primary"></span></a></li> 
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('fichas.create') }}">Ficha Técnica de PT <span
+                        class="sidebar-badge badge bg-primary"></span></a></li>      
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('seguridad.index') }}">Hoja de Seguridad<span
+                            class="sidebar-badge badge bg-primary"></span></a></li> 
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('pterminado.create') }}">Especificaciones de producto terminado<span
+                        class="sidebar-badge badge bg-primary"></span></a></li>  
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('sanitizacion.create') }}">Sanitización y Limpieza<span
+                            class="sidebar-badge badge bg-primary"></span></a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('bpm.create') }}">Bitacora bpms<span
+                        class="sidebar-badge badge bg-primary"></span></a></li>
+                        <li class="sidebar-item"><a class="sidebar-link" href="{{ route('criterio.create') }}">Criterios de aceptación<span
+                            class="sidebar-badge badge bg-primary"></span></a></li>
+           
 
-            <li class="sidebar-item">
+            {{-- <li class="sidebar-item">
                 <a class="sidebar-link" href="#">
                     <i class="fa fa-user"></i>
                     <span class="align-middle">Profile</span>
@@ -119,7 +131,7 @@
                     <li class="sidebar-item"><a class="sidebar-link" href="#">ApexCharts <span
                                 class="sidebar-badge badge bg-primary">Pro</span></a></li>
                 </ul>
-            </li>
+            </li> --}}
         </ul>
     </div>
 </nav>

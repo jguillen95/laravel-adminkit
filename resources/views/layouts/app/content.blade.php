@@ -7,7 +7,7 @@
                     <div class="card-header">
                         <h5 class="card-title mb-0 text-black">@yield("card-title")</h5>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body table table-responsive">
                         @yield('content')
                     </div>
                 </div>
